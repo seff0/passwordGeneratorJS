@@ -2,7 +2,7 @@ var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
   //Ask the user how many characters
-  var characterPrompt = prompt("How many characters?");
+  var characterPrompt = prompt("How many characters?", "8-128 characters");
   //If less than 8 or more than 128 characters are selected, show alert and start over
   if (characters < 8 || characters > 128) {
     alert("Password must be between 8-128 characters.");
